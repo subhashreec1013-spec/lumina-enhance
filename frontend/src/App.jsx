@@ -8,6 +8,7 @@ import MetricsPanel from './components/MetricsPanel';
 import ErrorView from './components/ErrorView';
 import { useEnhancement, STAGES } from './hooks/useEnhancement';
 import { ArrowLeft, Plus, Sparkles } from 'lucide-react';
+import SceneAnalyticsDemo from './components/SceneAnalyticsDemo';
 
 export default function App() {
   const workspaceRef = useRef(null);
@@ -66,6 +67,9 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      {/* ── Scene Analytics Demo ── */}
+      <SceneAnalyticsDemo />
 
       {/* ── Workspace ── */}
       <section ref={workspaceRef} className="py-16 px-6 min-h-screen flex flex-col items-center">
